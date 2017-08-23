@@ -47,7 +47,7 @@ fi
 
 if [ -z "$WEATHER_SERVICE" ]; then
   # create a Weather service
-  cf create-service weatherinsights Base-v2 logistics-wizard-weatherinsights
+  cf create-service weatherinsights Free-v2 logistics-wizard-weatherinsights
   # create a key for this service
   cf create-service-key logistics-wizard-weatherinsights for-openwhisk
   # retrieve the URL - it contains credentials + API URL
